@@ -1,5 +1,5 @@
-function revealOrigin{
+// function revealOrigin{
 
-	$("span").hover(css('backround-color' 'blue'))
+// 	$("span").hover(css('backround-color' 'blue'))
 
-}
+// }

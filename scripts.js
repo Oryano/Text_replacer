@@ -24,15 +24,13 @@
 // 	whatWordOn(e);
 // 	}, false);
 
-$(document).ready(checkWord)
+document.addEventListener("DOMContentLoaded", function(event) {  //wait for document to load
 
-function checkWord(){
-			 //var targetWord = 
-			 var word = document.getElementById('su'); //getElementsByClassName("you");
-			  // this handler will be executed every time the cursor is moved over a different list item
-			  word.addEventListener("mouseover", function( event ) {   
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('su').addEventListener("mouseover", function( event ) {   
 			    // highlight the mouseover target
-			    event.target.innerHTML = "Sheril";
+			    event.target.innerHTML = "Country";
 			    event.target.style.color = "blue";
 
 			    // reset the color after a short delay
@@ -41,4 +39,238 @@ function checkWord(){
 			      event.target.style.color = "";
 			    }, 700);
 			  }, false);
-			}
+			
+
+			  document.getElementById('place').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "House";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "place";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('river').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "stream";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "river";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+			  //  handler to be executed when cursor is moved over these elements
+			  document.getElementById("you").addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "Rachel";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "you";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('boats').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "the Lakes";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "boats";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('night').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "stars";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "night";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('she').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "pretty";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "she";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+			   //  handler to be executed when cursor is moved over this element
+			  document.getElementById('tea').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "sleepy";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "tea";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			   //  handler to be executed when cursor is moved over this element
+			  document.getElementById('oranges').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "blood";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "oranges";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			   //  handler to be executed when cursor is moved over this element
+			  document.getElementById('china').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "Asian";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "China";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			  			   //  handler to be executed when cursor is moved over this element
+			  document.getElementById('love').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "peace";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "love";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('jesus').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "God";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "Jesus";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('water').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "lake";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "water";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('tower').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "radio";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "tower";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+			  			  //  handler to be executed when cursor is moved over this element
+			  document.getElementById('sea').addEventListener("mouseover", function( event ) {   
+			    // highlight the mouseover target
+			    event.target.innerHTML = "ocean";
+			    event.target.style.color = "blue";
+
+			    // reset the color after a short delay
+			    setTimeout(function() {
+			      event.target.innerHTML = "sea";
+			      event.target.style.color = "";
+			    }, 700);
+			  }, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+			  // 			  //  handler to be executed when cursor is moved over these elements
+			  // document.getElementsByClassName("you").addEventListener("mouseover", function( event ) {   
+			  //   // highlight the mouseover target
+			  //   event.target.innerHTML = "Rachel";
+			  //   event.target.style.color = "blue";
+
+			  //   // reset the color after a short delay
+			  //   setTimeout(function() {
+			  //     event.target.innerHTML = "you";
+			  //     event.target.style.color = "";
+			  //   }, 700);
+			  // }, false);
+
+
+
+			
+
+
+
+
+
+});
+
+
+
+
+
+
+
+	
+
+
+
+

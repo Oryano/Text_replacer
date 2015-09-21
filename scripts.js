@@ -68,18 +68,18 @@ document.addEventListener("DOMContentLoaded", function(event) {  //wait for docu
 			  }, false);
 
 
-			  //  handler to be executed when cursor is moved over these elements
-			  document.getElementById("you").addEventListener("mouseover", function( event ) {   
-			    // highlight the mouseover target
-			    event.target.innerHTML = "Rachel";
-			    event.target.style.color = "blue";
+			  // //  handler to be executed when cursor is moved over these elements
+			  // document.getElementById("you").addEventListener("mouseover", function( event ) {   
+			  //   // highlight the mouseover target
+			  //   event.target.innerHTML = "Rachel";
+			  //   event.target.style.color = "blue";
 
-			    // reset the color after a short delay
-			    setTimeout(function() {
-			      event.target.innerHTML = "you";
-			      event.target.style.color = "";
-			    }, 700);
-			  }, false);
+			  //   // reset the color after a short delay
+			  //   setTimeout(function() {
+			  //     event.target.innerHTML = "you";
+			  //     event.target.style.color = "";
+			  //   }, 700);
+			  // }, false);
 
 
 			  //  handler to be executed when cursor is moved over this element
@@ -109,18 +109,18 @@ document.addEventListener("DOMContentLoaded", function(event) {  //wait for docu
 			    }, 700);
 			  }, false);
 
-			  //  handler to be executed when cursor is moved over this element
-			  document.getElementById('she').addEventListener("mouseover", function( event ) {   
-			    // highlight the mouseover target
-			    event.target.innerHTML = "pretty";
-			    event.target.style.color = "blue";
+			  // //  handler to be executed when cursor is moved over this element
+			  // document.getElementById('she').addEventListener("mouseover", function( event ) {   
+			  //   // highlight the mouseover target
+			  //   event.target.innerHTML = "pretty";
+			  //   event.target.style.color = "blue";
 
-			    // reset the color after a short delay
-			    setTimeout(function() {
-			      event.target.innerHTML = "she";
-			      event.target.style.color = "";
-			    }, 700);
-			  }, false);
+			  //   // reset the color after a short delay
+			  //   setTimeout(function() {
+			  //     event.target.innerHTML = "she";
+			  //     event.target.style.color = "";
+			  //   }, 700);
+			  // }, false);
 
 
 			   //  handler to be executed when cursor is moved over this element
@@ -235,23 +235,26 @@ document.addEventListener("DOMContentLoaded", function(event) {  //wait for docu
 
 
 
+			  //  handler to be executed when cursor is moved over these elements
+			  var youClass = document.getElementsByClassName("you");  //a list of the class elemnts
+			  for(var i = 0; i < youClass.length; i++){
+			  youClass[i].addEventListener("mouseover", function( event ) {   
+			    
+                //youClass[i].innerText= "Rachel";    // Change the content
+                //youClass[i].style.color = "blue";
+                
+                for (var j = 0; j < youClass.length; j++) {
+	                youClass[j].innerText= "Rachel";    // Change the content
+	                youClass[j].style.color = "blue";
+                }
 
-
-
-
-
-			  // 			  //  handler to be executed when cursor is moved over these elements
-			  // document.getElementsByClassName("you").addEventListener("mouseover", function( event ) {   
-			  //   // highlight the mouseover target
-			  //   event.target.innerHTML = "Rachel";
-			  //   event.target.style.color = "blue";
-
-			  //   // reset the color after a short delay
-			  //   setTimeout(function() {
-			  //     event.target.innerHTML = "you";
-			  //     event.target.style.color = "";
-			  //   }, 700);
-			  // }, false);
+			    // // reset the color after a short delay
+			    // setTimeout(function() {
+			    //   event.target.innerHTML = "you";
+			    //   event.target.style.color = "";
+			    // }, 700);
+			  }, false);
+			}
 
 
 
